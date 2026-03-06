@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere Trainer | NBC Baskets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nbc: { orange: '#F26522', purple: '#5D4E8C', dark: '#1a1a1a', darker: '#121212', light: '#f4f4f4' }
+                    },
+                    fontFamily: { sans: ['Roboto', 'sans-serif'], heading: ['Oswald', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>body { background-color: #121212; color: #f4f4f4; }</style>
+</head>
+<body class="bg-nbc-darker flex flex-col min-h-screen">
+
+    <nav class="bg-nbc-darker/95 backdrop-blur border-b border-gray-800 p-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <span class="text-xl group-hover:-translate-x-1 transition-transform text-nbc-orange">←</span>
+                <span class="font-heading font-bold uppercase tracking-wider text-white">Zurück</span>
+            </a>
+            <span class="text-gray-500 font-bold text-sm hidden md:block">COACHING STAFF</span>
+        </div>
+    </nav>
+
+    <header class="py-16 px-4 text-center">
+        <h1 class="text-5xl font-heading font-bold text-white mb-4">UNSERE TRAINER</h1>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+            Qualifizierte Coaches für alle Altersklassen. Wir setzen auf Ausbildung und Erfahrung.
+        </p>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 w-full pb-20">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-nbc-orange transition-all group flex flex-col">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://placehold.co/400x500/1a1a1a/666?text=Coach+Max" alt="Trainer Foto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-4 right-4 bg-black/70 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded border border-gray-600">
+                        C-LIZENZ
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-heading font-bold text-white uppercase">Max Mustermann</h3>
+                    <p class="text-nbc-orange font-bold text-sm mb-4">Head Coach U16 & Herren 1</p>
+                    
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">
+                        Max ist seit 10 Jahren Coach und legt Wert auf harte Defense und schnelles Umschaltspiel.
+                    </p>
+                    
+                    <div class="mt-auto pt-4 border-t border-gray-800 flex gap-2">
+                        <a href="teams/u16.html" class="text-xs bg-gray-800 hover:bg-nbc-purple text-white px-3 py-2 rounded transition-colors text-center flex-1">
+                            Team U16
+                        </a>
+                        <a href="teams/herren1.html" class="text-xs bg-gray-800 hover:bg-nbc-orange text-white px-3 py-2 rounded transition-colors text-center flex-1">
+                            Team Herren
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-nbc-purple transition-all group flex flex-col">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://placehold.co/400x500/1a1a1a/666?text=Coach+Sarah" alt="Trainer Foto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute top-4 right-4 bg-black/70 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded border border-gray-600">
+                        D-LIZENZ
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-heading font-bold text-white uppercase">Sarah Beispiel</h3>
+                    <p class="text-nbc-purple font-bold text-sm mb-4">Head Coach U10 & U12</p>
+                    
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">
+                        Sarah kümmert sich um den Nachwuchs. Spaß und Grundlagen stehen bei ihr an erster Stelle.
+                    </p>
+                    
+                    <div class="mt-auto pt-4 border-t border-gray-800 flex gap-2">
+                        <a href="teams/u10.html" class="text-xs bg-gray-800 hover:bg-nbc-purple text-white px-3 py-2 rounded transition-colors text-center flex-1">
+                            Team U10
+                        </a>
+                        <a href="teams/u12.html" class="text-xs bg-gray-800 hover:bg-nbc-purple text-white px-3 py-2 rounded transition-colors text-center flex-1">
+                            Team U12
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-gray-600 transition-all group flex flex-col">
+                <div class="h-64 overflow-hidden relative flex items-center justify-center bg-gray-800">
+                    <span class="text-4xl">🏀</span>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-heading font-bold text-white uppercase">Wir suchen dich!</h3>
+                    <p class="text-gray-500 font-bold text-sm mb-4">Jugendtrainer (m/w/d)</p>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">
+                        Du hast Erfahrung im Coaching oder willst es lernen? Wir unterstützen dich beim Lizenzerwerb!
+                    </p>
+                    <div class="mt-auto pt-4 border-t border-gray-800">
+                        <a href="mailto:info@nbc-nordhorn.de" class="block w-full text-xs bg-nbc-orange text-white px-3 py-2 rounded font-bold text-center hover:bg-orange-600 transition-colors">
+                            JETZT BEWERBEN
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-black py-8 text-center text-gray-600 text-sm border-t border-gray-900 mt-auto">
+        <p>© 2026 NBC Baskets Nordhorn e.V.</p>
+    </footer>
+</body>
+</html>
